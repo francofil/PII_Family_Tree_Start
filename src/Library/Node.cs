@@ -33,9 +33,9 @@ namespace Library
             }
         }    
 
-        public Node(int number, Person person)
+        public Node(List<Node> children, Person person)
         {
-            this.number = number;
+            this.children = children;
             this.person = person;
         }
 
