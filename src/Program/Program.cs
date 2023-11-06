@@ -56,6 +56,19 @@ namespace Program
             int totalAge = ageVisitor.TotalAge;
 
             Console.WriteLine("La suma de las edades de la familia es: " + totalAge);
+
+
+            OldestVisitor oldestVisitor = new OldestVisitor();
+            LongestNameVisitor LongestName = new LongestNameVisitor();
+
+            oldestVisitor.Visit(n1); 
+            LongestName.Visit(n1);  
+
+            Person largestChild = oldestVisitor.Oldest;
+            string longestName = LongestName.LongestName;
+
+            Console.WriteLine("El hijo más grande es: " + largestChild.Name);
+            Console.WriteLine("El nombre más largo es: " + longestName);
         }
     }
 }
