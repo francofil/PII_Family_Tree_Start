@@ -17,25 +17,25 @@ namespace Program
             Person person7 = new Person("Valentina", 13);
 
             List<Node> hijos1 = new List<Node>();
-            Node n1 = new Node(hijos1, person1);
+            Node n1 = new Node(hijos1, person1, 1);
 
             List<Node> hijos2 = new List<Node>();
-            Node n2 = new Node(hijos2, person2);
+            Node n2 = new Node(hijos2, person2, 2);
 
             List<Node> hijos3 = new List<Node>();
-            Node n3 = new Node(hijos3, person3);
+            Node n3 = new Node(hijos3, person3, 3);
 
             List<Node> hijos4 = new List<Node>();
-            Node n4 = new Node(hijos4, person4);
+            Node n4 = new Node(hijos4, person4, 4);
 
             List<Node> hijos5 = new List<Node>();
-            Node n5 = new Node(hijos5, person5);
+            Node n5 = new Node(hijos5, person5, 5);
 
             List<Node> hijos6 = new List<Node>();
-            Node n6 = new Node(hijos6, person6);
+            Node n6 = new Node(hijos6, person6, 6);
 
             List<Node> hijos7 = new List<Node>();
-            Node n7 = new Node(hijos7, person7);
+            Node n7 = new Node(hijos7, person7, 7);
             
             n1.AddChildren(n2);
             n1.AddChildren(n3);

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System;
+using System.Globalization;
 
 namespace Library
 {
@@ -33,10 +34,11 @@ namespace Library
             }
         }    
 
-        public Node(List<Node> children, Person person)
+        public Node(List<Node> children, Person person, int number)
         {
             this.children = children;
             this.person = person;
+            this.number = number;
         }
 
         public void AddChildren(Node n)
