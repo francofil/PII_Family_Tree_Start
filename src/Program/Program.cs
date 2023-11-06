@@ -45,6 +45,17 @@ namespace Program
             n3.AddChildren(n7);
 
             // visitar el árbol aquí
+
+
+
+            AgeVisitor ageVisitor = new AgeVisitor();
+
+            // Visitar el nodo raíz para calcular la suma de edades
+            ageVisitor.Visit(n1);
+
+            int totalAge = ageVisitor.TotalAge;
+
+            Console.WriteLine("La suma de las edades de la familia es: " + totalAge);
         }
     }
 }
